@@ -1,0 +1,14 @@
+services:
+
+  ci-cd-demo:
+
+    container_name: ci-cd-demo
+
+    build:
+      context: .
+      dockerfile: Dockerfile
+
+    ports:
+      - "8080:8080"
+
+    restart: unless-stopped
